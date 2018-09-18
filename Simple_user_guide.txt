@@ -1,0 +1,27 @@
+User guide
+
+1. Add data stream 
+	Format : add data_stream --singal <singal_name> --value <value> --value_type <type of value(Integer, String, Datetime)>
+	
+2. Add data stream file
+	Format : add datafile --path <actual file path> --filename <actual filename.json>
+
+3. Add rules
+	Format : add rule --signal <singal_name> --value_type <type of value(Integer, String, Datetime)> --conditions (list of conditions options in below) --value (threshold value)
+	
+	Conditions options:
+		For Integer
+			notgreater - not greated than value given in rule
+			notlesser - not lesser than value given in rule
+			notequal - not equal to value given in rule
+			greater - greater than value given in rule
+			lesser - lesser than value given in rule
+			equal - equal to value given in rule
+		
+		For DateTime options
+			currentTime - give this option to check current time while adding data_stream
+			given exact time - Example time format: 23/07/2017 13:24:00.8765
+			
+		For String:
+			notin - value in the rule should not be in data_stream
+			bein - value in the rule should be in data_stream

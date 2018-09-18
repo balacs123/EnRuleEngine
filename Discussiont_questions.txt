@@ -1,0 +1,11 @@
+Discussion Questions
+
+1. I used this approach so that user can add rules easily and pass multiple data stream or data stream file without restarting it every time. 
+We need to give value_type also in rules to get comparison faster and easier
+
+2. Complexity
+	Best case: O (1) 		# data stream match with first rule
+	Worst complexity: O (n) 	# data stream matches the last rule
+	
+3. If I had more time, I can improve rules addition and comparision part along with conditions mentioned in the rules
+
